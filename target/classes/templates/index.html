@@ -1,0 +1,27 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Index Page</title>
+  <style>
+    .center {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    }
+</style>
+</head>
+<body>
+<form action="save" method="post">
+  <table>
+    <tr>
+      <td><label for="password-Length">Insert the password length: </label></td>
+      <td><input type="text" name="passwordLength"></input></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Submit"></input></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
