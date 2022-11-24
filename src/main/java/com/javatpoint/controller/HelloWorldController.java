@@ -4,8 +4,6 @@ import org.passay.CharacterData;
 import org.passay.CharacterRule;
 import org.passay.EnglishCharacterData;
 import org.passay.PasswordGenerator;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -42,18 +40,17 @@ public class HelloWorldController {
 
         String password = gen.generatePassword(passwordLength, splCharRule, lowerCaseRule,
                 upperCaseRule, digitRule);
+
         return password;
     }
 
     @RequestMapping("/")
-    public String index()
-    {
+    public String index() {
         return "index";
     }
 
-    @RequestMapping(value="/save", method=RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute LoginForm form)
-    {
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public ModelAndView save(@ModelAttribute LoginForm form) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("password");
         modelAndView.addObject("generatePassayPassword", generatePassayPassword(form.passwordLength));
