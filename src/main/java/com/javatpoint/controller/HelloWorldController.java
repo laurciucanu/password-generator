@@ -12,7 +12,7 @@ import static org.passay.DigestDictionaryRule.ERROR_CODE;
 
 @Controller
 public class HelloWorldController {
-    public String generatePassayPassword(int passwordLength) {
+    public static String generatePassayPassword(int passwordLength) {
         PasswordGenerator gen = new PasswordGenerator();
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;
         CharacterRule lowerCaseRule = new CharacterRule(lowerCaseChars);
