@@ -1,4 +1,4 @@
-import com.javatpoint.controller.HelloWorldController;
+import controller.HelloWorldController;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

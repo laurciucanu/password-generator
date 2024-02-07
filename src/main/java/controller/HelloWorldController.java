@@ -1,4 +1,4 @@
-package com.javatpoint.controller;
+package controller;
 
 import org.passay.CharacterData;
 import org.passay.CharacterRule;

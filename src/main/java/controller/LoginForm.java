@@ -1,4 +1,4 @@
-package com.javatpoint.controller;
+package controller;
 
 public class LoginForm {
     public Integer getPasswordLength() {
